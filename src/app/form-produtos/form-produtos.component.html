@@ -1,0 +1,15 @@
+<h3>{{titulo}}</h3>
+<div class="form">
+  <form>
+    <label for="nome">Nome</label>
+    <input [(ngModel)]= "produto.nome" type="text" id="nome" name="nome" placeholder="Nome.." >
+
+    <label for="preco">Preco</label>
+    <input [(ngModel)]= "produto.preco" type="text" id="preco" name="preco" placeholder="Preco.." >
+
+    <div class="buttons">
+      <input type="button" (click)="salvarProduto()" value="Salvar">
+      <input type="button" (click)="cancelar()" value="Cancelar">      
+    </div>
+  </form>
+</div>
